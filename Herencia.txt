@@ -1,0 +1,109 @@
+Universidad de las Fuerzas Armadas ESPE
+Nombre: Madellyn Tasipanta
+NRC:16419
+   
+    Tema: Herencia 
+La herencia es uno de los pilares fundamentales de la Programación Orientada a Objetos (POO). 
+Permite crear jerarquías de clases, donde una clase hereda las características 
+(atributos y métodos) de otra clase, conocida como clase base o superclase. 
+Esto facilita la reutilización de código, la organización del software y la creación de
+ modelos más flexibles y escalables.
+ -Clase Base (Superclase): Clase de la cual otras clases derivan. 
+                           Contiene atributos y métodos comunes.
+ -Clase Derivada (Subclase): Clase que hereda de la clase base y puede añadir o modificar 
+                             comportamientos.
+ -Método Sobrescrito: Método en la subclase que redefine un método de la superclase.
+
+Beneficios de la Herencia:
+  -Reutilización de Código: Los métodos y atributos comunes se definen una sola vez en la clase base.
+  -Facilidad de Mantenimiento: Cambios en la clase base se reflejan automáticamente en las subclases.
+  -Extensibilidad: Nuevas funcionalidades se pueden añadir mediante la creación de subclases.
+  -Organización y Claridad: La estructura jerárquica facilita la comprensión del sistema.
+  -Escalabilidad: Facilita el crecimiento del software al permitir la incorporación de nuevas funcionalidades 
+		  sin modificar las clases existentes.
+  -Mayor claridad y mantenibilidad: El código heredado es más fácil de entender y mantener, 
+                                    ya que se basa en conceptos ya definidos.
+
+Consideraciones al usar Herencia:
+
+  -Diseño adecuado: Es importante diseñar cuidadosamente la jerarquía de clases para evitar 
+		    problemas como relaciones de herencia complejas o redundancia de código.
+  -Composición vs. Herencia: A veces, la composición puede ser una mejor opción que la herencia 
+			     para reutilizar código y crear relaciones entre objetos.
+  -Herencia múltiple con cuidado: La herencia múltiple puede ser compleja y difícil de manejar,
+				  por lo que se debe usar con precaución.
+  -Evitar la herencia profunda: Demasiados niveles de herencia pueden hacer que el código sea 
+				difícil de entender y mantener.
+
+Ejemplo de herencia en Java:
+
+ -Clases de animales: Podemos crear una clase base Animal con atributos como nombre, edad y 
+		    especie. Luego, podemos crear clases derivadas como Perro, Gato o Ave, 
+		    que heredan las características de Animal y agregan atributos y 
+		     métodos específicos de cada tipo de animal.
+
+class Animal {
+    String nombre;
+    
+    Animal(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    void hacerSonido() {
+  
+    }
+}
+class Perro extends Animal {
+    
+    Perro(String nombre) {
+        super(nombre);
+    }
+    
+    @Override
+    void hacerSonido() {
+        System.out.println("Guau");
+    }
+}
+class Gato extends Animal {
+    
+    Gato(String nombre) {
+        super(nombre);
+    }
+    
+    @Override
+    void hacerSonido() {
+        System.out.println("Miau");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Perro miPerro = new Perro("Fido");
+        Gato miGato = new Gato("Michi");
+        
+        System.out.println(miPerro.nombre);  
+        miPerro.hacerSonido();  // Salida: Guau
+        
+        System.out.println(miGato.nombre);  
+        miGato.hacerSonido();  // Salida: Miau
+    }
+}
+
+Conclusiones:
+La herencia es una herramienta poderosa en la POO que permite crear código más reutilizable,
+ organizado y flexible. Sin embargo, es importante utilizarla de manera adecuada y considerar 
+las alternativas de composición y el diseño cuidadoso de la jerarquía de clases para obtener 
+los mejores resultados.
+ 
+Bibliografías
+
+Cpp-inheritance. (s/f). GeeksforGeeks. Recuperado el 1 de julio de 2024, 
+de https://www.geeksforgeeks.org/tag/cpp-inheritance/
+
+Coppola, M. (2022, diciembre 5). Herencia en Java: definición y ejemplos. 
+Hubspot.es. https://blog.hubspot.es/website/que-es-herencia-java
+
+
+
+
+

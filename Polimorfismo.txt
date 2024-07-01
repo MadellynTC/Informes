@@ -1,0 +1,60 @@
+Universidad de las Fuerzas Armadas ESPE
+Nombre: Madellyn Tasipanta
+NRC:16419
+Tema: Polimorfismo
+El polimorfismo es otro pilar fundamental de la Programación Orientada a Objetos (POO). 
+Permite que objetos de diferentes clases respondan al mismo mensaje de manera diferente, 
+según su implementación específica. Esto facilita la creación de código más flexible y 
+reutilizable, y permite una mejor organización del software.
+
+  -Polimorfismo: La capacidad de un objeto de tomar varias formas o responder de diferentes maneras al mismo mensaje.
+  -Mensaje: Una instrucción o solicitud enviada a un objeto.
+  -Método: La implementación de un mensaje dentro de una clase.
+  -Enlazado: El proceso de determinar qué método se debe ejecutar cuando se envía un mensaje a un objeto.
+  -Enlazado temprano: El método se selecciona en tiempo de compilación, basado en el tipo de objeto estático.
+  -Enlazado tardío: El método se selecciona en tiempo de ejecución, basado en el tipo de objeto real.
+
+Tipos de Polimorfismo:
+
+-Polimorfismo de Sobrecarga (Overloading Polymorphism): 
+    Permite que múltiples métodos con el mismo nombre existan en la misma clase, diferenciados por sus parámetros.
+-Polimorfismo de Inclusión (Subtyping Polymorphism):
+    Permite que una clase base sea referenciada por cualquier clase derivada.
+-Polimorfismo Paramétrico (Parametric Polymorphism):
+   Permite que una función o una clase maneje diferentes tipos de datos sin estar restringida a un tipo específico.
+-Polimorfismo por Inclusión (Inclusion Polymorphism):
+   Se refiere a la capacidad de usar una referencia o un puntero de la clase base para referirse
+    a objetos de la clase derivada.
+
+Beneficios del Polimorfismo:
+
+-Flexibilidad: Permite crear código más flexible y adaptable a cambios en los requisitos.
+-Reutilización de código: Facilita la reutilización de código al permitir que diferentes objetos 
+			  respondan al mismo mensaje de manera similar.
+-Organización del software: Facilita la organización del código en módulos y clases con 
+			    responsabilidades bien definidas.
+-Mayor claridad y mantenibilidad: puede ser más claro y fácil de mantener, ya que los mensajes 
+                                  se envían a los objetos sin necesidad de conocer su implementación específica.
+
+Ejemplo de polimorfismo:
+Formas geométricas: Podemos crear una clase base Forma con un método calcularArea(). 
+Luego, podemos crear clases derivadas como Círculo, Triángulo o Rectángulo, que 
+sobrescriben el método calcularArea() para implementar la fórmula específica de cada 
+forma geométrica.
+
+Conclusión
+
+El polimorfismo es una herramienta poderosa en la POO que permite crear código más flexible,
+reutilizable y organizado. Sin embargo, es importante utilizarlo de manera adecuada y 
+considerar las alternativas de diseño para obtener los mejores resultados.
+
+Bibliografia
+Java - Polymorphism. (s/f). Tutorialspoint.com. Recuperado el 1 de julio de 2024, 
+de https://www.tutorialspoint.com/java/java_polymorphism.htm
+Wikipedia contributors. (s/f). Polimorfismo (informática). Wikipedia, 
+The Free Encyclopedia. https://es.wikipedia.org/w/index.php?title=Polimorfismo_(inform%C3%A1tica)&oldid=160563440
+
+
+
+
+
